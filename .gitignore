@@ -1,0 +1,227 @@
+# ==============================================================================
+# Root .gitignore for Asnaf Super-Project / Meta-Repository
+# Prevents large files, build artifacts, dependencies, and temporary data
+# from being committed to Git across all services (Backend .NET, Frontend Vue/Quasar, etc.)
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# Dependencies & Package Managers (Heavy directories)
+# ------------------------------------------------------------------------------
+node_modules/
+**/node_modules/
+.pnpm-store/
+**/.pnpm-store/
+jspm_packages/
+web_modules/
+
+# ------------------------------------------------------------------------------
+# Frontend Build Outputs & Temporary Files (Vue / Vite / Quasar / Webpack)
+# ------------------------------------------------------------------------------
+dist/
+**/dist/
+build/
+**/build/
+out/
+**/out/
+.quasar/
+**/.quasar/
+.output/
+**/.output/
+.nuxt/
+**/.nuxt/
+.next/
+**/.next/
+*.tsbuildinfo
+quasar.config.*.temporary.compiled*
+**/quasar.config.*.temporary.compiled*
+
+# ------------------------------------------------------------------------------
+# .NET / C# Build Results & Artifacts
+# ------------------------------------------------------------------------------
+[Bb]in/
+**/[Bb]in/
+[Oo]bj/
+**/[Oo]bj/
+[Dd]ebug/
+**/[Dd]ebug/
+[Dd]ebugPublic/
+**/[Dd]ebugPublic/
+[Rr]elease/
+**/[Rr]elease/
+[Rr]eleases/
+**/[Rr]eleases/
+x64/
+**/x64/
+x86/
+**/x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+**/bld/
+artifacts/
+**/artifacts/
+project.lock.json
+project.fragment.lock.json
+*.binlog
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+
+# Test & Code Coverage
+[Tt]est[Rr]esult*/
+**/[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+CodeCoverage/
+**/CodeCoverage/
+*.VisualState.xml
+TestResult.xml
+nunit-*.xml
+
+# Visual Studio / Rider User Specific Files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+APM.sln.DotSettings.user
+*.DotSettings.user
+
+# ------------------------------------------------------------------------------
+# Heavy Binaries, Libraries & Machine-Compiled Code
+# ------------------------------------------------------------------------------
+*.dll
+*.exe
+*.so
+*.dylib
+*.node
+*.lib
+*.a
+*.pdb
+*.obj
+*.o
+*.class
+*.jar
+*.war
+*.ear
+
+# ------------------------------------------------------------------------------
+# Archives & Compressed Files (Must NEVER be tracked in Git)
+# ------------------------------------------------------------------------------
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.gz
+*.bz2
+*.xz
+*.7z
+*.rar
+*.iso
+*.dmg
+*.img
+*.vmdk
+*.qcow2
+
+# ------------------------------------------------------------------------------
+# AI Models, Machine Learning Weights & Large Tensors
+# ------------------------------------------------------------------------------
+*.onnx
+*.safetensors
+*.pt
+*.pth
+*.bin
+*.ckpt
+*.h5
+*.pkl
+*.pickle
+*.joblib
+*.gguf
+*.ggml
+
+# ------------------------------------------------------------------------------
+# Databases, Dumps & Large Data Files
+# ------------------------------------------------------------------------------
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.db-wal
+*.sql.gz
+*.dump
+*.bak
+
+# ------------------------------------------------------------------------------
+# Python & Virtual Environments
+# ------------------------------------------------------------------------------
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+**/.venv/
+venv/
+**/venv/
+env/
+**/env/
+
+# ------------------------------------------------------------------------------
+# Large Media Files (Video / Audio)
+# ------------------------------------------------------------------------------
+*.mp4
+*.mkv
+*.avi
+*.mov
+*.wmv
+*.flv
+*.webm
+*.wav
+*.mp3
+*.flac
+*.ogg
+*.psd
+*.ai
+*.raw
+
+# ------------------------------------------------------------------------------
+# Logs & Process Outputs
+# ------------------------------------------------------------------------------
+*.log
+logs/
+**/logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ------------------------------------------------------------------------------
+# Environment Variables & Secrets (Security & Isolation)
+# ------------------------------------------------------------------------------
+.env
+.env.*
+*.env
+*.local
+!*.env.example
+appsettings.*.local.json
+appsettings.Production.json
+
+# ------------------------------------------------------------------------------
+# Operating System & IDE Files
+# ------------------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+.idea/
+**/.idea/
+.vscode/
+**/.vscode/
+*.swp
+*.swo
+*~
+
